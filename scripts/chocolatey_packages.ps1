@@ -59,3 +59,4 @@ foreach ($group in $packages){
 # postsetup: wsl. run wsl_symlinks
 $wsl_symlinks_res_str = if (wsl ./wsl_symlinks.sh 'e' $env:username)`
 {"[postsetup: wsl] symlinks created"} else {"[postsetup: wsl] symlink creation failed"}
+write $wsl_symlinks_res_str
