@@ -47,6 +47,7 @@ $media = [
   'audacity-lame'
 ]
 # install packages
+$packages = [$browser, $social, $office, $dev_tools, $windows_tools, $wsl, $media]
 foreach ($group in $packages){
   foreach ($package in $group){
     $pkg_res_str = if (choco install -y $package) {"[choco] installed '{0}'"} `
