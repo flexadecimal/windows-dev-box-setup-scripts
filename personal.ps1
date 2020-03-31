@@ -27,7 +27,7 @@ executeScript "RemoveDefaultApps.ps1";
 #executeScript "CommonDevTools.ps1";
 
 # install personal software
-executeScript "chocolatey_packages,ps1";
+executeScript "chocolatey_packages.ps1";
 
 #--- reenabling critial items ---
 Enable-UAC
